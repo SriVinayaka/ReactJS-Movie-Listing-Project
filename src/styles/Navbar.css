@@ -1,0 +1,102 @@
+nav {
+  padding: 0.7vw 3vw;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2vw;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.2vw;
+  color: #000;
+}
+
+.nav-links a.active {
+  color: #00a2ff;
+  border-bottom: 0.2vw solid #00a2ff;
+  padding-bottom: 1.3vw;
+}
+
+.search-form {
+  display: flex;
+}
+
+.search-form input[type="text"] {
+  padding: 0.5vw 1vw;
+  font-size: 1.2vw;
+  border: 0.1vw solid #ccc;
+}
+
+.search-form button {
+  padding: 0.5vw 1.5vw;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+}
+
+.search-form button:hover {
+  background-color: #0056b3;
+}
+
+.line {
+  display: block;
+  width: 100%;
+  height: 0.2vw;
+  background-color: #f0e3e3;
+}
+
+@media all and (max-width: 1000px) {
+  .search-form input[type="text"] {
+    padding: 0.3vw 0.8vw;
+  }
+
+  .search-form button {
+    padding: 0.3vw 1vw;
+  }
+  .nav-links a.active {
+    padding-bottom: 0.9vw;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .search-form input[type="text"] {
+    padding: 0.2vw 0.5vw;
+  }
+
+  .search-form button {
+    padding: 0.2vw 0.8vw;
+  }
+}
+
+@media all and (max-width: 660px) {
+  .search-form input[type="text"] {
+    padding: 0.3vw 0.4vw;
+  }
+
+  .search-form button {
+    padding: 0.3vw 0.6vw;
+  }
+  .search-form button svg {
+    font-size: 0.9vw;
+  }
+  .nav-links a.active {
+    padding-bottom: 1.1vw;
+  }
+}
+@media all and (max-width: 500px) {
+  .nav-links a.active {
+    padding-bottom: 1.5vw;
+  }
+}

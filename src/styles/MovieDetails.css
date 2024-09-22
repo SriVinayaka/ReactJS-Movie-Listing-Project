@@ -1,0 +1,44 @@
+.movieDetails {
+  position: fixed;
+}
+
+.movieDetails a {
+  text-decoration: none;
+  color: rgb(55, 179, 236);
+}
+
+.movieDetails .container {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.movieDetails .container img {
+  max-height: 50vh;
+  max-width: 20vw;
+}
+
+.movieDetails .container .right h1 {
+  margin-bottom: 1rem;
+}
+
+.movie-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.movie-table td {
+  padding: 0.2rem 2rem 0.2rem 0;
+  text-align: left;
+}
+.movie-table td:first-child {
+  width: 15vw;
+}
+
+.movie-table tr {
+  border-bottom: 1px solid transparent;
+}
+
+.movie-details {
+  font-family: Arial, sans-serif;
+}
